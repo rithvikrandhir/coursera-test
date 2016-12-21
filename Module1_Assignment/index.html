@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+    <title>Am I eating too much?</title>
+  </head>
+  <body ng-controller='myController'>
+    <div>
+      <h1>What did you eat today?</h1>
+      <div>
+       <textarea name="name" placeholder="Lunch Items" rows="8" cols="80" ng-model="text"></textarea>
+       <label for="name" style="color:{{color}}; border: 1px  solid {{color}};">{{label}}</label>
+      </div>
+     <div>
+         <button type="button" name="button" ng-click="check();">Check if too much</button>
+     </div>
+    </div>
+
+  </body>
+</html>
