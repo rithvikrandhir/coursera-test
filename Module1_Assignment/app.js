@@ -45,8 +45,8 @@ function checkIfTooMuch(text) {
       label = "Too Much!"
       color = "red";
     }
-    return {label,color};
   }
+  return {label,color};
 }
 
 })();
