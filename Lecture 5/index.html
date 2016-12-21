@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html ng-app="DIAppl">
+<!DOCTYPE html>
+<html ng-app='myApp'>
   <head>
     <meta charset="utf-8">
-    <script src="angular.min.js"></script>
-    <script src "app.js"></script>
     <title>Dependency Injection</title>
-  </head>
-  <body>
-    <h1>Dependency Injection</h1>
-    <div ng-controller="DIController">
-      <input type="text"
-      ng-model="name">
+    <script type="text/javascript" src='angular.js'>
+    </script>
+    <script src="app.js"></script>
 
-      ng-blur = "upper();"
-    </div>
+    </script>
+  </head>
+  <body ng-controller="myController">
+    <h1>Dependency Injection</h1>
+    <input type="text"
+    ng-model='name'
+    ng-blur='upper();'>
+
   </body>
 </html>
