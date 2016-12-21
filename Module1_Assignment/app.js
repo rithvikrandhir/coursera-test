@@ -17,12 +17,9 @@ function myController($scope) {
   $scope.check = function() {
 
       var result = checkIfTooMuch($scope.text);
-      if (result != null) {
+      if (result['label'] != "Please Enter Data First") {
         $scope.label = result['label'];
         $scope.color = result['color'];
-      }else{
-        $scope.label = "Please Enter Data First";
-        $scope.color = "orange";
       }
   }
 }
