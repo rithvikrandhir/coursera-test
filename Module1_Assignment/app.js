@@ -21,15 +21,15 @@ function myController($scope) {
         $scope.label = result['label'];
         $scope.color = result['color'];
       }else{
-        $scope.label = "";
-        $scope.color = "white";
+        $scope.label = "Please Enter Data First";
+        $scope.color = "orange";
       }
   }
 }
 
 function checkIfTooMuch(text) {
-  var label = "";
-  var color = "";
+  var label = "Please Enter Data First";
+  var color = "orange";
   text = text.trim();
   if (text != "") {
     var splitText = text.split(',');
